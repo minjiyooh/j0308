@@ -6,7 +6,10 @@ package t10_abstract2;
     즉, 추상 메서드명만 정의할뿐 실체 내용은 기술하지 않는다.(실제로 사용할 코드를 적어주는 중괄호가 없다.)
   -추상클래스는 생성(new)해서 사용할 수 없다. 즉, 실제로 사용하려면 추상클래스를 상속(extends)받아서만 사용할 수 있다.(실체(구현 클래스))
 */
-public class Animal {
+public abstract class Animal {
 	public void sound() {}
+
 	public void sori() {}
+
+	public abstract void cry(); // 모든 동물의 울음소리메소드를 cry()로 통일 ....
 }
